@@ -5,6 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+$routes->get('/', 'Dashboard::index');
+
 
 $routes->get('/', 'Auth::index');
 $routes->get('/login', 'Auth::index');
@@ -52,12 +54,24 @@ $routes->delete('product/delete/(:num)', 'Product::delete/$1');
 $routes->post('product/fetchRecords', 'Product::fetchRecords');
 $routes->get('/dashboard', 'Dashboard::index');
 
+$routes->post('product/stock-in', 'Product::stockIn');
+$routes->post('product/stock-out', 'Product::stockOut');
+
+
 $routes->get('categories', 'Category::index');
 $routes->post('categories/save', 'Category::save');
 $routes->get('categories/edit/(:num)', 'Category::edit/$1');
 $routes->post('categories/update', 'Category::update');
 $routes->delete('categories/delete/(:num)', 'Category::delete/$1');
 $routes->post('categories/fetchRecords', 'Category::fetchRecords');
+
+$routes->get('reports', 'Report::index');
+$routes->get('reports/daily-sales', 'Report::dailySales');
+$routes->get('reports/inventory', 'Report::inventory');
+
+$routes->get('pos', 'POS::index');
+$routes->post('pos/checkout', 'POS::checkout');
+
 
 
 // Logs routes for admin

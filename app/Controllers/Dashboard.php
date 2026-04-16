@@ -8,21 +8,21 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        // 🔐 Login check
+        // 🔐 Login check (optional)
         if (!session()->get('user_id')) {
             return redirect()->to('/login');
         }
 
         $model = new ProductModel();
 
-        // 📊 Summary Cards
+        // ✅ Total Products
         $data['totalProducts'] = $model->countAll();
 
-        $data['totalStock'] = $model
-            ->selectSum('quantity')
-            ->first()['quantity'] ?? 0;
+        // ✅ Total Stock (safe version)
+        $totalStock = $model->selectSum('quantity')->first();
+        $data['totalStock'] = $totalStock['quantity'] ?? 0;
 
-        // 📉 LOW STOCK LIST (below 10)
+        // ✅ Low Stock (below 10)
         $data['lowStock'] = $model
             ->where('quantity <', 10)
             ->findAll();

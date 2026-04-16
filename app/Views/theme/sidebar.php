@@ -76,7 +76,7 @@ body.dark-mode .main-sidebar .nav-link:hover {
          alt="AdminLTE Logo" 
          class="brand-image img-circle elevation-3" 
          style="opacity: .8">
-    <span class="brand-text font-weight-light" style="color: white">INVENTORY</span>
+    <span class="brand-text font-weight-light" style="color: white">JILWIN STORE</span>
 </div>
   <div class="sidebar">
     <nav class="mt-2">
@@ -131,6 +131,20 @@ body.dark-mode .main-sidebar .nav-link:hover {
   <i class="nav-icon fas fa-box"></i>
   <p>Products</p>
 </a>
+
+<li class="nav-item">
+    <a href="<?= base_url('reports') ?>" class="nav-link">
+        <i class="nav-icon fas fa-chart-bar"></i>
+        <p>Reports</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="<?= base_url('pos') ?>" class="nav-link">
+        <i class="nav-icon fas fa-cash-register"></i>
+        <p>POS</p>
+    </a>
+</li>
 
 <li class="nav-item">
   <a href="<?= base_url('categories') ?>" class="nav-link <?= is_active(1, 'categories') ?>">

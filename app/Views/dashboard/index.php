@@ -20,7 +20,7 @@
         <div class="col-lg-6">
           <div class="small-box bg-info">
             <div class="inner">
-              <h3><?= $totalProducts ?></h3>
+              <h3><?= $totalProducts ?? 0 ?></h3>
               <p>Total Products</p>
             </div>
           </div>
@@ -29,7 +29,7 @@
         <div class="col-lg-6">
           <div class="small-box bg-success">
             <div class="inner">
-              <h3><?= $totalStock ?></h3>
+              <h3><?= $totalStock ?? 0 ?></h3>
               <p>Total Stock</p>
             </div>
           </div>
@@ -64,7 +64,9 @@
                     <?php foreach ($lowStock as $row) : ?>
                       <tr>
                         <td><?= $no++ ?></td>
-                        <td><?= $row['product_name'] ?></td>
+
+                        <!-- ✅ FIX HERE -->
+                        <td><?= $row['name'] ?></td>
 
                         <td>
                           <span class="badge bg-danger">
@@ -72,12 +74,12 @@
                           </span>
                         </td>
 
-                        <td><?= $row['price'] ?></td>
+                        <td>₱<?= number_format($row['price'], 2) ?></td>
                       </tr>
                     <?php endforeach; ?>
                   <?php else : ?>
                     <tr>
-                      <td colspan="4" class="text-center">
+                      <td colspan="4" class="text-center text-success">
                         ✅ No Low Stock Products
                       </td>
                     </tr>
