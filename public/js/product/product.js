@@ -42,6 +42,17 @@ $(document).on('click', '.edit-btn', function () {
             $('#EditModal #price').val(response.data.price);
             $('#EditModal #quantity').val(response.data.quantity);
             $('#EditModal').modal('show');
+
+            actions =
+`
+<button class="btn btn-warning btn-sm editBtn">
+    <i class="fa fa-edit"></i>
+</button>
+
+<button class="btn btn-danger btn-sm deleteBtn">
+    <i class="fa fa-trash"></i>
+</button>
+`;
         }
     }, 'json');
 });

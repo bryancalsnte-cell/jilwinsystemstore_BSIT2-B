@@ -101,13 +101,13 @@ body.dark-mode .main-sidebar .nav-link:hover {
       </a>
     </li> -->
 
-    </li>
+    <!-- </li>
     <li class="nav-item">
       <a href="<?= base_url('person') ?>" class="nav-link <?= is_active(1, 'person') ?>">
         <i class="nav-icon fas fa-user-friends"></i>
         <p>Person</p>
       </a>
-    </li>
+    </li> -->
     <!-- <li class="nav-item">
       <a href="<?= base_url('profiling') ?>" class="nav-link <?= is_active(1, 'profiling') ?>">
         <i class="nav-icon fas fa-users"></i>
@@ -116,18 +116,12 @@ body.dark-mode .main-sidebar .nav-link:hover {
     </li>
     <li class="nav-item">
       <a href="<?= base_url('student') ?>" class="nav-link <?= is_active(1, 'student') ?>">
-        <i class="nav-icon fas fa-users"></i>
+        <i classsssss="nav-icon fas fa-users"></i>
         <p>Student</p>
       </a>
     </li> -->
-     <li class="nav-item">
-      <a href="<?= base_url('users') ?>" class="nav-link <?= is_active(1, 'users') ?>">
-        <i class="nav-icon fas fa-user-lock"></i>
-        <p>User Accounts</p>
-      </a>
-    </li>
-
-   <a href="<?= base_url('product') ?>" class="nav-link">
+    
+    <a href="<?= base_url('product') ?>" class="nav-link">
   <i class="nav-icon fas fa-box"></i>
   <p>Products</p>
 </a>
@@ -152,6 +146,14 @@ body.dark-mode .main-sidebar .nav-link:hover {
     <p>Categories</p>
   </a>
 </li>
+
+<li class="nav-item">
+      <a href="<?= base_url('users') ?>" class="nav-link <?= is_active(1, 'users') ?>">
+        <i class="nav-icon fas fa-user-lock"></i>
+        <p>User Accounts</p>
+      </a>
+    </li>
+
   </ul>
 </nav>
 </div>
