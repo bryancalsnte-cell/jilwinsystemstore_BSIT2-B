@@ -77,151 +77,151 @@
       </div>
     </div>
 
-    <!-- ================= ADD MODAL ================= -->
-    <div class="modal fade" id="AddModal">
-      <div class="modal-dialog">
-        <form id="addForm">
-
-          <?= csrf_field() ?>
-
-          <div class="modal-content">
-
-            <div class="modal-header bg-primary">
-              <h5 class="modal-title">
-                <i class="fa fa-plus"></i> Add Product
-              </h5>
-
-              <button type="button"
-                      class="close text-white"
-                      data-dismiss="modal">
-                &times;
-              </button>
-            </div>
-
-            <div class="modal-body">
-
-              <div class="form-group">
-                <label>Product Name</label>
-                <input type="text"
-                       name="name"
-                       class="form-control"
-                       placeholder="Enter product name"
-                       required>
-              </div>
-
-              <div class="form-group">
-                <label>Price</label>
-                <input type="number"
-                       name="price"
-                       class="form-control"
-                       placeholder="Enter price"
-                       required>
-              </div>
-
-              <div class="form-group">
-                <label>Quantity</label>
-                <input type="number"
-                       name="quantity"
-                       class="form-control"
-                       placeholder="Enter quantity"
-                       required>
-              </div>
-
-            </div>
-
-            <div class="modal-footer">
-
-              <button type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal">
-                <i class="fa fa-times"></i> Cancel
-              </button>
-
-              <button type="submit"
-                      class="btn btn-primary">
-                <i class="fa fa-save"></i> Save
-              </button>
-
-            </div>
-
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- ================= EDIT MODAL ================= -->
-    <div class="modal fade" id="EditModal">
-      <div class="modal-dialog">
-
-        <form id="editForm">
-
-          <?= csrf_field() ?>
-
-          <div class="modal-content">
-
-            <div class="modal-header bg-warning">
-              <h5 class="modal-title">
-                <i class="fa fa-edit"></i> Edit Product
-              </h5>
-
-              <button type="button"
-                      class="close"
-                      data-dismiss="modal">
-                &times;
-              </button>
-            </div>
-
-            <div class="modal-body">
-
-              <input type="hidden" name="id" id="id">
-
-              <div class="form-group">
-                <label>Product Name</label>
-                <input type="text"
-                       name="name"
-                       id="name"
-                       class="form-control">
-              </div>
-
-              <div class="form-group">
-                <label>Price</label>
-                <input type="number"
-                       name="price"
-                       id="price"
-                       class="form-control">
-              </div>
-
-              <div class="form-group">
-                <label>Quantity</label>
-                <input type="number"
-                       name="quantity"
-                       id="quantity"
-                       class="form-control">
-              </div>
-
-            </div>
-
-            <div class="modal-footer">
-
-              <button type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal">
-                <i class="fa fa-times"></i> Cancel
-              </button>
-
-              <button type="submit"
-                      class="btn btn-warning">
-                <i class="fa fa-save"></i> Update
-              </button>
-
-            </div>
-
-          </div>
-        </form>
-      </div>
-    </div>
-
   </section>
+</div>
+
+<!-- ================= ADD MODAL ================= -->
+<div class="modal fade" id="AddModal">
+  <div class="modal-dialog">
+    <form id="addForm">
+
+      <?= csrf_field() ?>
+
+      <div class="modal-content">
+
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title">
+            <i class="fa fa-plus"></i> Add Product
+          </h5>
+
+          <button type="button"
+                  class="close text-white"
+                  data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label>Product Name</label>
+            <input type="text"
+                   name="name"
+                   class="form-control"
+                   placeholder="Enter product name"
+                   required>
+          </div>
+
+          <div class="form-group">
+            <label>Price</label>
+            <input type="number"
+                   name="price"
+                   class="form-control"
+                   placeholder="Enter price"
+                   required>
+          </div>
+
+          <div class="form-group">
+            <label>Quantity</label>
+            <input type="number"
+                   name="quantity"
+                   class="form-control"
+                   placeholder="Enter quantity"
+                   required>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal">
+            <i class="fa fa-times"></i> Cancel
+          </button>
+
+          <button type="submit"
+                  class="btn btn-primary">
+            <i class="fa fa-save"></i> Save
+          </button>
+
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ================= EDIT MODAL ================= -->
+<div class="modal fade" id="EditModal">
+  <div class="modal-dialog">
+
+    <form id="editForm">
+
+      <?= csrf_field() ?>
+
+      <div class="modal-content">
+
+        <div class="modal-header bg-warning">
+          <h5 class="modal-title">
+            <i class="fa fa-edit"></i> Edit Product
+          </h5>
+
+          <button type="button"
+                  class="close"
+                  data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <input type="hidden" name="id" id="id">
+
+          <div class="form-group">
+            <label>Product Name</label>
+            <input type="text"
+                   name="name"
+                   id="name"
+                   class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Price</label>
+            <input type="number"
+                   name="price"
+                   id="price"
+                   class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Quantity</label>
+            <input type="number"
+                   name="quantity"
+                   id="quantity"
+                   class="form-control">
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal">
+            <i class="fa fa-times"></i> Cancel
+          </button>
+
+          <button type="submit"
+                  class="btn btn-warning">
+            <i class="fa fa-save"></i> Update
+          </button>
+
+        </div>
+
+      </div>
+    </form>
+  </div>
 </div>
 
 <?= $this->endSection() ?>

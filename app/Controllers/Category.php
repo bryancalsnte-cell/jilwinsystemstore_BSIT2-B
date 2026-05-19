@@ -9,7 +9,7 @@ use App\Models\LogModel;
 class Category extends Controller
 {
     public function index(){
-        return view('product/index');  // Use your WORKING products view temporarily
+        return view('category/index');
     }
 
     public function save(){

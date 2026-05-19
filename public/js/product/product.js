@@ -131,12 +131,18 @@ $(document).on('click', '.stock-out', function () {
 // ✅ DATATABLE
 $(document).ready(function () {
 
+    const csrfName = 'csrf_test_name';
+    const csrfToken = $('input[name="' + csrfName + '"]').val();
+
     $('#example1').DataTable({
         processing: true,
         serverSide: true,
         ajax: {
             url: baseUrl + 'product/fetchRecords',
-            type: 'POST'
+            type: 'POST',
+            data: function (d) {
+                d[csrfName] = csrfToken;
+            }
         },
         columns: [
             { data: 'row_number' },

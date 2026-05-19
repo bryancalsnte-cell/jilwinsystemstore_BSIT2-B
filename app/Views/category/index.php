@@ -44,73 +44,73 @@
         </div>
       </div>
     </div>
-
-    <!-- ✅ ADD MODAL - EXACT SAME -->
-    <div class="modal fade" id="AddNewModal">
-      <div class="modal-dialog">
-        <form id="addCategoryForm">  <!-- ✅ Changed ID -->
-          <?= csrf_field() ?>
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Add Category</h5>  <!-- ✅ Changed -->
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <div class="modal-body">
-              <div class="form-group">
-                <label>Category Name</label>  <!-- ✅ Changed -->
-                <input type="text" name="category_name" class="form-control" required />  <!-- ✅ Changed name -->
-              </div>
-
-              <div class="form-group">
-                <label>Description</label>  <!-- ✅ New field -->
-                <input type="text" name="description" class="form-control" />  <!-- ✅ New field -->
-              </div>
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- ✅ EDIT MODAL - EXACT SAME -->
-    <div class="modal fade" id="editCategoryModal">  <!-- ✅ Changed ID -->
-      <div class="modal-dialog">
-        <form id="editCategoryForm">  <!-- ✅ Changed ID -->
-          <?= csrf_field() ?>
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Edit Category</h5>  <!-- ✅ Changed -->
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <div class="modal-body">
-              <input type="hidden" id="categoryId" name="id">  <!-- ✅ Changed ID -->
-
-              <div class="form-group">
-                <label>Category Name</label>  <!-- ✅ Changed -->
-                <input type="text" name="category_name" id="category_name" class="form-control" required />  <!-- ✅ Changed -->
-              </div>
-
-              <div class="form-group">
-                <label>Description</label>  <!-- ✅ New field -->
-                <input type="text" id="description" name="description" class="form-control">  <!-- ✅ New field -->
-              </div>  
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn btn-primary">Update</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
   </section>
+</div>
+
+<!-- ✅ ADD MODAL - EXACT SAME -->
+<div class="modal fade" id="AddNewModal">
+  <div class="modal-dialog">
+    <form id="addCategoryForm">  <!-- ✅ Changed ID -->
+      <?= csrf_field() ?>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Category</h5>  <!-- ✅ Changed -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Category Name</label>  <!-- ✅ Changed -->
+            <input type="text" name="category_name" class="form-control" required />  <!-- ✅ Changed name -->
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>  <!-- ✅ New field -->
+            <input type="text" name="description" class="form-control" />  <!-- ✅ New field -->
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ✅ EDIT MODAL - EXACT SAME -->
+<div class="modal fade" id="editCategoryModal">  <!-- ✅ Changed ID -->
+  <div class="modal-dialog">
+    <form id="editCategoryForm">  <!-- ✅ Changed ID -->
+      <?= csrf_field() ?>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Category</h5>  <!-- ✅ Changed -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <input type="hidden" id="categoryId" name="id">  <!-- ✅ Changed ID -->
+
+          <div class="form-group">
+            <label>Category Name</label>  <!-- ✅ Changed -->
+            <input type="text" name="category_name" id="category_name" class="form-control" required />  <!-- ✅ Changed -->
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>  <!-- ✅ New field -->
+            <input type="text" id="description" name="description" class="form-control">  <!-- ✅ New field -->
+          </div>  
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
 <div class="toasts-top-right fixed" style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;"></div>
